@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yueyan Tang — Blog</title>
+  <link rel="icon" href="data:," />
+  <style>
+    body {
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, sans-serif;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 24px;
+      color: #0f172a;
+      background: #ffffff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #020617;
+        color: #e5e7eb;
+      }
+      a {
+        color: #38bdf8;
+      }
+    }
+
+    a {
+      color: #0ea5e9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    header a {
+      font-size: 0.95rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    article {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    article h2 {
+      margin: 0 0 4px;
+      font-size: 1.3rem;
+    }
+
+    time {
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 0.9rem;
+      color: #64748b;
+      text-align: center;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      article {
+        border-top-color: #1f2937;
+      }
+      footer {
+        border-top-color: #1f2937;
+        color: #9ca3af;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">&larr; Back to home</a>
+    <div>Blog</div>
+  </header>
+
+  <main>
+    <h1>Notes and updates</h1>
+
+    <!-- Example post 1 -->
+    <article>
+      <h2>Why I care about naturalistic infant–caregiver data</h2>
+      <time datetime="2025-11-20">November 20, 2025</time>
+      <p>
+        A short reflection on how joint attention, everyday language environments, and wearable sensing
+        came together in my research program. 
+      </p>
+    </article>
+
+    <!-- Example post 2 -->
+    <article>
+      <h2>Building an open-source infant wearable</h2>
+      <time datetime="2025-11-01">November 1, 2025</time>
+      <p>
+        Some lessons learned from iterating on hardware prototypes, data pipelines, and collaborations
+        across developmental science and engineering.
+      </p>
+    </article>
+
+    <!-- You can add more <article> blocks here over time -->
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Yueyan Tang</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

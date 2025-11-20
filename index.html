@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yueyan Tang</title>
+  <meta name="description" content="Academic homepage of Yueyan Tang, PhD candidate in Cognitive Science at UC San Diego." />
+  <link rel="icon" href="data:," />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --link: #0ea5e9;
+      --link-visited: #0284c7;
+      --border: #e2e8f0;
+      --card: #f8fafc;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #020617;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --link: #38bdf8;
+        --link-visited: #0ea5e9;
+        --border: #1f2937;
+        --card: #020617;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: var(--link-visited);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(6px);
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 12px 24px;
+    }
+
+    .nav .links a {
+      margin-right: 16px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .nav .links a:last-child {
+      margin-right: 0;
+    }
+
+    .wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 24px;
+      margin-top: 28px;
+    }
+
+    .avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 999px;
+      object-fit: cover;
+      background: #cbd5f5;
+      flex-shrink: 0;
+    }
+
+    .about-text h1 {
+      margin: 0 0 6px;
+      font-size: 1.9rem;
+    }
+
+    .about-text em {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .about-text p {
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+
+    section {
+      margin-top: 40px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+    }
+
+    .pubs-list {
+      padding-left: 20px;
+    }
+
+    .pub {
+      margin-bottom: 16px;
+      padding: 10px 12px;
+      border-radius: 8px;
+      background: var(--card);
+      border: 1px solid var(--border);
+    }
+
+    .pub-title {
+      font-weight: 600;
+    }
+
+    .pub-meta {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .pub-links {
+      margin-top: 4px;
+      font-size: 0.9rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 16px 24px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        padding-inline: 16px;
+      }
+      .wrap {
+        padding-inline: 16px;
+      }
+      .about-container {
+        flex-direction: column;
+      }
+      .avatar {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="links" aria-label="Section navigation">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap">
+    <div class="about-container" id="about">
+      <!-- Optional photo: place profile.jpg in the same folder -->
+      <img src="profile.jpg" alt="Portrait of Yueyan Tang" class="avatar" />
+      <div class="about-text">
+        <h1>Yueyan Tang <span lang="zh" style="font-family: KaiTi, STKaiti, 'Noto Serif SC', serif;">(唐乐言)</span></h1>
+        <p><em>PhD candidate in Cognitive Science, University of California, San Diego</em></p>
+
+        <p>
+          I study how infants and caregivers coordinate attention and communication in everyday environments.
+          My work combines naturalistic behavioral observation, infant–wearable sensing, and computational
+          modeling to characterize the dynamics of joint attention and early language input.
+        </p>
+
+        <p>
+          Currently, I am developing an open-source, multimodal infant wearable platform and analytic pipeline
+          that enable scalable, high-fidelity recording of infant–caregiver interactions in the home. This work
+          integrates time-series analysis, mixed-effects models, and machine learning to bridge developmental theory
+          with practical tools for studying diverse and multilingual families.
+        </p>
+
+        <p>
+          Email:
+          <a href="mailto:yyt005@ucsd.edu">yyt005@ucsd.edu</a><br />
+          Department of Cognitive Science, UC San Diego
+        </p>
+      </div>
+    </div>
+
+    <section id="publications" aria-labelledby="pubs-heading">
+      <h2 id="pubs-heading">Publications and manuscripts</h2>
+      <ol class="pubs-list" reversed>
+        <li class="pub">
+          <div class="pub-title">OpenBabyographer: A multimodal open-source infant wearable for studying naturalistic interactions from an egocentric perspective.</div>
+          <div class="pub-meta">
+            Tang, Y., Liu, Y., Shirazi, S. Y., Hennessy, V., Shi, J., Bhamidipati, S., Nambiar, A., Luo, L., Deák, G. O., &amp; Wang, E. (2025).
+            Manuscript submitted to the Proceedings of the 2025 ACM CHI Conference on Human Factors in Computing Systems.
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-title">Assessing Whisper for infant research: Benchmarking ASR accuracy and failure analysis on caregiver–infant interactions.</div>
+          <div class="pub-meta">
+            Tang, Y., Hennessy, V., Liu, T., &amp; Deák, G. O. (2025).
+            In Proceedings of the 2025 IEEE International Conference on Development and Learning (ICDL).
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-title">Exploring multimodal and verbal cues in naturalistic caregiver–infant joint attention from 6 to 9 months.</div>
+          <div class="pub-meta">
+            Liu, A., Tang, Y., Ellis, S., &amp; Deák, G. O. (2025).
+            In Proceedings of the 2025 IEEE International Conference on Development and Learning (ICDL).
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-title">Parental adherence to receptive language test protocols: A citizen science approach to bilingual language assessment.</div>
+          <div class="pub-meta">
+            Du, Y., Tang, Y., Liu, Y., Fong, K. K., Wang, D., &amp; Sheng, L. (2025).
+            Manuscript submitted to <em>Frontiers in Education</em>.
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-title">Automatic classification of parental behaviors in bilingual datasets from in-person and telehealth language assessment.</div>
+          <div class="pub-meta">
+            Wang, Q., Yao, B., Fong, K. K., Tang, Y., Liu, Y., Sheng, L., Wang, D., Jia, R., &amp; Du, Y. (2025).
+            Manuscript submitted to the Association for Computational Linguistics (ARR).
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-title">The slow emergence of gaze- and point-following: A longitudinal study of infants from 4 to 12 months.</div>
+          <div class="pub-meta">
+            Tang, Y., Gonzalez, M. R., &amp; Deák, G. O. (2024).
+            <em>Developmental Science, 27</em>(3), e13457.
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-title">Multimodal maternal input: Exploring the dynamics of joint attention in naturalistic infant–caregiver interactions.</div>
+          <div class="pub-meta">
+            Tang, Y., &amp; Deák, G. O. (2024).
+            In Proceedings of the 2024 IEEE International Conference on Development and Learning (ICDL), Austin, Texas.
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-title">Variability in infant social responsiveness: Age and situational differences in attention-following.</div>
+          <div class="pub-meta">
+            Tang, Y., Triesch, J., &amp; Deák, G. O. (2023).
+            <em>Developmental Cognitive Neuroscience, 63</em>, 101283.
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-title">How infants learn to follow attention from gaze-direction and pointing gestures.</div>
+          <div class="pub-meta">
+            Deák, G. O., &amp; Tang, Y. (in press).
+            In <em>Pointing: Culture, Development, and Evolution</em>. Cambridge University Press.
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul>
+        <li>UC San Diego, Mathematics Department – MATH 11: Calculus-based introductory probability and statistics (Teaching Assistant)</li>
+        <li>UC San Diego, Mathematics Department – MATH 20B: Calculus for Science and Engineering (Teaching Assistant)</li>
+        <li>UC San Diego, Mathematics Department – MATH 189: Exploratory data analysis and inference (Teaching Assistant)</li>
+        <li>UC San Diego, Cognitive Science Department – COGS 10: Cognitive consequences of technology (Teaching Assistant)</li>
+        <li>UC San Diego, Cognitive Science Department – COGS 108: Data science in practice (Teaching Assistant)</li>
+        <li>UC San Diego, Cognitive Science Department – COGS 155: Gesture and Cognition (Teaching Assistant)</li>
+        <li>UC San Diego – DSGN 1: Design of Everyday Things (Teaching Assistant)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Yueyan Tang</p>
+  </footer>
+
+  <script>
+    // Set footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
